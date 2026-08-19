@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festus Forward | The Reality</title>
+    <title>Festus Forward | Totally Trustworthy Corporate PR</title>
     <style>
         :root {
             --bg: #f8fafc;
             --text: #1e293b;
             --corporate-blue: #004a99;
             --reality-red: #991b1b;
-            --accent: #f8fafc;
         }
 
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding-top: 60px; }
         #main-nav { background: #fff; border-bottom: 1px solid #ddd; padding: 15px; text-align: center; position: fixed; top: 0; width: 100%; z-index: 1000; }
         #main-nav a { margin: 0 10px; color: #333; text-decoration: none; font-weight: bold; }
         
-        .hero { background: #000; color: white; padding: 80px 20px; text-align: center; }
+        .hero { background: #0f172a; color: white; padding: 80px 20px; text-align: center; }
         .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { color: #94a3b8; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
         
         .container { max-width: 800px; margin: 40px auto; padding: 20px; }
         
+        h2.category-title { color: #0f172a; margin-top: 40px; margin-bottom: 15px; border-bottom: 2px solid #cbd5e1; padding-bottom: 5px; font-size: 1.4rem; }
+
         /* The Accordion/Card Style */
-        details { background: white; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px; padding: 15px; cursor: pointer; }
-        summary { font-weight: bold; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; }
-        summary::after { content: '+'; font-size: 1.5rem; }
+        details { background: white; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px; padding: 15px; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+        summary { font-weight: bold; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; outline: none; }
+        summary::after { content: '+'; font-size: 1.5rem; color: #64748b; }
         details[open] summary::after { content: '-'; }
         
         /* The Spin vs Reality Layout */
-        .spin-box { background: #f1f5f9; padding: 15px; border-left: 4px solid var(--corporate-blue); margin: 15px 0; }
-        .reality-box { background: #fef2f2; padding: 15px; border-left: 4px solid var(--reality-red); margin: 15px 0; }
+        .spin-box { background: #f1f5f9; padding: 15px; border-left: 4px solid var(--corporate-blue); margin: 15px 0; border-radius: 0 6px 6px 0; }
+        .reality-box { background: #fef2f2; padding: 15px; border-left: 4px solid var(--reality-red); margin: 15px 0; border-radius: 0 6px 6px 0; }
         .label { font-weight: bold; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; margin-bottom: 5px; display: block; }
+        
+        footer { text-align: center; padding: 40px; color: #94a3b8; font-size: 0.85rem; border-top: 1px solid #e2e8f0; background: #fff; margin-top: 60px; }
     </style>
 </head>
 <body>
@@ -40,51 +44,113 @@
 
     <header class="hero">
         <h1>Festus Forward</h1>
-        <p>A "community information" site (that really just wants you to stop asking questions).</p>
+        <p>A sanitized, corporate-approved look at what CRG <em>says</em> they're doing versus what local sunshine documents actually prove.</p>
     </header>
 
     <div class="container">
         
-        <h2>Project Overview</h2>
+        <h2 class="category-title">Project Overview</h2>
 
         <details>
             <summary>What is the size of the project?</summary>
             <div class="spin-box">
                 <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
-                "We listened to you! We downsized from 12 buildings to just 4."
+                "We listened to you! We downsized from 12 buildings to just 4 single-story buildings."
             </div>
             <div class="reality-box">
                 <span class="label" style="color:var(--reality-red)">Reality Check</span>
-                The 4-building plan was the original baseline design. They floated a massive 12-building "worst-case" scenario so they could look like the good guys when they "compromised" on the plan they actually intended to build all along.
+                The 4-building layout was always the baseline design. They floated a massive 1-gigawatt, 12-building "worst-case" scenario early on so they could look like benevolent compromise-makers when scaling back to what they wanted all along.
             </div>
         </details>
 
         <details>
-            <summary>How will this impact local water?</summary>
+            <summary>Who is the end-user / tenant of the data center?</summary>
             <div class="spin-box">
                 <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
-                "It's a closed-loop cooling system. We reuse water and produce almost zero discharge."
+                "We have interest from a lot of users! We will share that at the appropriate time."
             </div>
             <div class="reality-box">
                 <span class="label" style="color:var(--reality-red)">Reality Check</span>
-                Internal engineering reports (Horner & Shifrin) prove the local water authority is already maxed out. They are hiding confidential figures because if you knew the real capacity numbers, you’d know there’s no water left for the project.
+                Total secrecy. By refusing to name the actual tech giant backing the project, they completely shield the ultimate end-user from local accountability regarding power grid and water consumption.
+            </div>
+        </details>
+
+
+        <h2 class="category-title">Economic Benefits</h2>
+
+        <details>
+            <summary>How does Festus benefit?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "More than $6 billion in private investment, $40 million over 10 years in community benefit payments, and no real estate property tax abatements!"
+            </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                Overlooking the heavy personal property tax abatements phased down over 25 years and the secret bond packages handled through the Jefferson County Port Authority. The "community benefits" are minor payouts compared to the long-term infrastructure strain.
+            </div>
+        </details>
+
+
+        <h2 class="category-title">Oversight & Accountability</h2>
+
+        <details>
+            <summary>What independent agencies regulate this project?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "Multiple independent agencies review everything, including the PSC, MISO, DNR, EPA, and the City of Festus."
+            </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                Leaving out the fact that developer CRG actually *wrote* the initial data center regulations on behalf of the city, and legacy city leadership went to great lengths to coordinate backroom meetings designed to evade public quorum laws.
             </div>
         </details>
 
         <details>
-            <summary>Are there any plans for on-site power plants?</summary>
+            <summary>Has the city or county signed any NDAs?</summary>
             <div class="spin-box">
                 <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
-                "No power plant. Just clean utility power from Ameren and backup generators for testing."
+                "There are no non-disclosure agreements in place between the City of Festus and CRG, in either direction."
             </div>
             <div class="reality-box">
                 <span class="label" style="color:var(--reality-red)">Reality Check</span>
-                "Backup generators" is a euphemism for a massive array of diesel-burning engines that will roar during grid stress. They haven't disclosed the environmental impact of the air permits they'll need for these "backups."
+                While formal NDAs might be absent, sunshine document drops revealed intense behind-the-scenes confidentiality agreements regarding confidential water stress numbers and private stakeholder briefings.
+            </div>
+        </details>
+
+
+        <h2 class="category-title">Water, Energy & Sound</h2>
+
+        <details>
+            <summary>How will this project impact the community's water?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "It's a closed-loop cooling system. It reuses water and produces zero discharge. No private wells will be used."
+            </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                Leaked engineering reports (such as the Horner & Shifrin study) prove the Jefferson County Water Authority is already struggling to keep up with regional demands. The figures were hidden behind confidentiality agreements for a reason.
+            </div>
+        </details>
+
+        <details>
+            <summary>Are there any plans for on-site power plants or nuclear reactors?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "All power comes through Ameren Missouri. There is no power plant—only backup generators for outages and testing."
+            </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                "Backup generators" means an immense industrial array of diesel-burning engines running under heavy loads during grid stress, pushing noise and requiring major air permits that lack transparent local oversight.
             </div>
         </details>
 
     </div>
 
+    <footer>
+        <p>A satirical community response site &bull; Not affiliated with CRG, Clayco, or FestusForward.com</p>
+    </footer>
+
+    <!-- Shared Nav Script -->
     <script>
         fetch('nav.html')
             .then(response => response.text())
