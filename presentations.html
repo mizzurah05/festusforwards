@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation Archive &amp; Satire - Festus Forward</title>
+    <title>Presentations & Fiction Gallery - Festus Forward (Parody)</title>
     <style>
         :root {
             --bg-color: #ffffff;
@@ -27,7 +27,7 @@
             line-height: 1.6;
         }
 
-        /* Site Header */
+        /* Header matching the parody site */
         header.site-header {
             display: flex;
             justify-content: space-between;
@@ -98,7 +98,7 @@
 
         /* Content Container */
         .content-container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 60px 20px;
         }
@@ -112,13 +112,12 @@
             font-size: 1.05rem;
         }
 
-        /* Slide Row Layout (Image on left/top, Satire on right/bottom) */
         .slide-card {
             background: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.02);
         }
 
@@ -145,34 +144,6 @@
             border-radius: 4px;
             font-size: 0.85rem;
             font-weight: bold;
-        }
-
-        .slide-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            align-items: start;
-        }
-
-        @media (max-width: 768px) {
-            .slide-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .slide-image-box img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
-            background: #f1f5f9;
-        }
-
-        .slide-image-caption {
-            font-size: 0.8rem;
-            color: #64748b;
-            margin-top: 6px;
-            text-align: center;
         }
 
         .spin-box {
@@ -238,110 +209,141 @@
     <!-- Hero Banner -->
     <section class="hero-section">
         <h1>The Presentation <span>Archive</span></h1>
-        <p>A slide-by-slide visual deconstruction of CRG's June 29, 2026 pitch deck—comparing their polished slide graphics directly against reality.</p>
+        <p>A slide-by-slide deconstruction of CRG's June 29, 2026 community pitch deck—examining what they presented versus what they were trying to hide[cite: 1].</p>
     </section>
 
     <!-- Main Content -->
     <main class="content-container">
         
         <div class="deck-intro">
-            <strong>Note from the Community:</strong> Below are the key slides presented by CRG executives Bob Clark, Chris McKee, and Natasha Das during their June 29, 2026 town hall, broken down with our transparent annotations.
+            <strong>Note from the Community:</strong> On June 29, 2026, CRG executives Bob Clark, Chris McKee, and Natasha Das hosted a special presentation for the City of Festus[cite: 1]. Below is our fully annotated, reality-checked breakdown of their official slide deck.
         </div>
 
-        <!-- Slide 6 & 7: The Conceptual Plan -->
+        <!-- Slide 3 & 4 -->
         <div class="slide-card">
             <div class="slide-header">
-                <span class="slide-title">The Conceptual Plan</span>
+                <span class="slide-title">Introduction &amp; "We Listened"</span>
+                <span class="slide-number">Slides 3–4</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "We are here because we believe in this project... We listened. We made changes. Today is not the end of the conversation, but a long-term partnership."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                They "listened" only after 100% of the incumbent pro-development city council members were wiped out in a historic April election landslide, and thousands of residents signed recall petitions.
+            </div>
+        </div>
+
+        <!-- Slide 6 & 7 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">The Conceptual Plan (The Shrinking Megawatts)</span>
                 <span class="slide-number">Slides 6–7</span>
             </div>
-            <div class="slide-grid">
-                <div class="slide-image-box">
-                    <!-- Placeholder using the Squarespace aerial asset from the presentation -->
-                    <img src="https://images.squarespace-cdn.com/content/v1/6967f547fa328a4def22dcd6/179fdce2-3f5e-4ff2-bc1b-b03ed270f0e1/Final+Rendering+-+Aerial+June+29%2C+2026.jpg" alt="Conceptual Plan Map">
-                    <div class="slide-image-caption">Figure: 600 MW / 4 Buildings / 1,200ft Buffer Layout[cite: 1]</div>
-                </div>
-                <div class="slide-text-box">
-                    <div class="spin-box">
-                        <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
-                        Designed for ~600 megawatts (40% smaller than the original 1-gigawatt plan) with a minimum 1,200-foot buffer to the nearest home[cite: 1].
-                    </div>
-                    <div class="reality-box">
-                        <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
-                        The 1-gigawatt monstrosity was a classic anchor-drop strategy. Propose an apocalyptic grid-destroyer first so that a 600-megawatt industrial park looks like a generous compromise.
-                    </div>
-                </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                Designing for approximately 600 megawatts—flaunting that it is "40% smaller than the 1-gigawatt plan" with 500-foot residential property line setbacks[cite: 1].
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                The 1-gigawatt monstrosity was a deliberate anchor-drop strategy. Propose an apocalyptic grid-destroyer first so that a 600-megawatt industrial park looks like a generous compromise.
             </div>
         </div>
 
-        <!-- Slide 8: Side-by-Side Comparison -->
+        <!-- Slide 9 -->
         <div class="slide-card">
             <div class="slide-header">
-                <span class="slide-title">A Plan Refined Through Community Feedback</span>
-                <span class="slide-number">Slide 8</span>
-            </div>
-            <div class="slide-grid">
-                <div class="slide-image-box">
-                    <img src="https://images.squarespace-cdn.com/content/v1/6967f547fa328a4def22dcd6/ebfbdcb2-ab85-47f0-9a89-630905d233ca/CRG+-+Festus+Forward+Hero+Image.jpg" alt="Side by Side Comparison">
-                    <div class="slide-image-caption">Figure: 1GW / 12 Buildings vs 600MW / 4 Buildings[cite: 1]</div>
-                </div>
-                <div class="slide-text-box">
-                    <div class="spin-box">
-                        <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
-                        "We listened to the community and significantly scaled down the project footprint[cite: 1]."
-                    </div>
-                    <div class="reality-box">
-                        <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
-                        They "listened" only after 100% of the pro-development city council was swept away in an election landslide and thousands signed recall petitions.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 9: Forest Preservation -->
-        <div class="slide-card">
-            <div class="slide-header">
-                <span class="slide-title">Environmental Stewardship - Forest Preservation</span>
+                <span class="slide-title">Environmental Stewardship &amp; Forest Preservation</span>
                 <span class="slide-number">Slide 9</span>
             </div>
-            <div class="slide-grid">
-                <div class="slide-image-box">
-                    <img src="https://images.squarespace-cdn.com/content/v1/6967f547fa328a4def22dcd6/179fdce2-3f5e-4ff2-bc1b-b03ed270f0e1/Final+Rendering+-+Aerial+June+29%2C+2026.jpg" alt="Forest Preservation">
-                    <div class="slide-image-caption">Figure: 52% of Land Preserved (188 Acres)[cite: 1]</div>
-                </div>
-                <div class="slide-text-box">
-                    <div class="spin-box">
-                        <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
-                        "We are leaving ± 188 acres, or more than 52% of the land, completely preserved, protecting natural beauty and local gravesites[cite: 1]."
-                    </div>
-                    <div class="reality-box">
-                        <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
-                        Celebrating that they aren't paving over *every single square inch* of the property doesn't change the fact that the remaining 48% will host a massive high-security industrial campus humming 24/7.
-                    </div>
-                </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "± 52% of the land preserved! Leaving ± 188 acres untouched, protecting natural beauty and local gravesites."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                Celebrating that they aren't paving over *every single square inch* of the 360+ acres doesn't change the fact that the remaining 48% will host a massive high-security industrial campus humming 24/7.
             </div>
         </div>
 
-        <!-- Slide 24: Summary of Commitments -->
+        <!-- Slide 18 -->
         <div class="slide-card">
             <div class="slide-header">
-                <span class="slide-title">Original vs. New Commitments to Festus</span>
-                <span class="slide-number">Slide 24</span>
+                <span class="slide-title">Water &amp; Closed-Loop Cooling</span>
+                <span class="slide-number">Slide 18</span>
             </div>
-            <div class="slide-grid">
-                <div class="slide-image-box">
-                    <img src="https://images.squarespace-cdn.com/content/v1/6967f547fa328a4def22dcd6/ebfbdcb2-ab85-47f0-9a89-630905d233ca/CRG+-+Festus+Forward+Hero+Image.jpg" alt="Commitments Summary">
-                    <div class="slide-image-caption">Figure: Summary graphic of financial promises[cite: 1]</div>
-                </div>
-                <div class="slide-text-box">
-                    <div class="spin-box">
-                        <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
-                        $40M in community benefits, $3M residential rate relief if usage tops 1GW, voluntary home buyouts at FMV + 15%, and a $10M decommissioning bond[cite: 1].
-                    </div>
-                    <div class="reality-box">
-                        <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
-                        A $10M decommissioning bond is a fraction of what it costs to clean up an abandoned data center wasteland, and token rate payouts don't fix long-term grid strain.
-                    </div>
-                </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "A closed-loop cooling system that recycles water, producing little to no wastewater discharge. Can operate for years without draining."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                Internal engineering reports (Horner & Shifrin) released via sunshine requests proved the Jefferson County Water Authority is already at capacity limits. Confidential agreements kept those scary numbers hidden until local watchdogs exposed them.
+            </div>
+        </div>
+
+        <!-- Slide 19 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Air Quality &amp; Tier 4 Backup Generators</span>
+                <span class="slide-number">Slide 19</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "Backup generators run mainly for brief monthly testing and genuine outages. We've committed to Tier 4 generators and daytime-only testing."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                "Backup generators" for a 600-megawatt facility means an immense fleet of industrial diesel engines roaring simultaneously during grid stress, requiring heavy EPA air permits that residents had to fight tooth and nail to uncover.
+            </div>
+        </div>
+
+        <!-- Slide 21 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Decommissioning Bond</span>
+                <span class="slide-number">Slide 21</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "If abandoned after 20 years, the City may draw on a $10 million bond or letter of credit to reposition the asset."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                A $10 million bond is a drop in the bucket for a $6 billion corporation walking away from a massive, obsolete industrial wasteland two decades down the road.
+            </div>
+        </div>
+
+        <!-- Slide 22 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Electricity &amp; The Grid ($3M Relief Offer)</span>
+                <span class="slide-number">Slide 22</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "We pay for our own energy... If electricity use exceeds 1 GW, we will fund a $3 million payment to the City for residential electric rate relief."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                A token payout of $3 million spread across local utility accounts doesn't fix the long-term strain and wholesale rate spikes inflicted on everyday regional ratepayers by massive tech loads.
+            </div>
+        </div>
+
+        <!-- Slide 23 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Residential Buyouts</span>
+                <span class="slide-number">Slide 23</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "Honoring the voluntary buyout for 12 homes at Fair Market Value as of June 1, 2025 + 15% and a $10,000 moving allowance."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                Let's not forget that families originally found out their homes were in a secret developer buyout zone via Facebook posts because the city and developer never bothered to notify them directly.
             </div>
         </div>
 
@@ -349,7 +351,7 @@
 
     <!-- Footer -->
     <footer>
-        <p><strong>CRG Presentation Parody Archive</strong></p>
+        <p><strong>CRG Development Presentation Parody</strong></p>
         <p>Not affiliated with CRG, Clayco, or FestusForward.com &bull; Real accountability at <a href="https://festusfierce.org" target="_blank">FestusFierce.org</a></p>
     </footer>
 
