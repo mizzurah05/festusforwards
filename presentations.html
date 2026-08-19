@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations & Fiction Gallery - Festus Forward (Parody)</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --accent-green: #88E664;
+            --corporate-blue: #004a99;
+            --reality-red: #991b1b;
+            --border-color: #d1d5db;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header matching the parody site */
+        header.site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #000000;
+            color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .site-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-green);
+        }
+
+        /* Hero Banner */
+        .hero-section {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            padding: 140px 20px 80px 20px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            max-width: 900px;
+            margin: 0 auto 15px auto;
+            text-transform: uppercase;
+        }
+
+        .hero-section h1 span {
+            color: var(--accent-green);
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            color: #e5e7eb;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .deck-intro {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            font-size: 1.05rem;
+        }
+
+        .slide-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .slide-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            text-transform: uppercase;
+        }
+
+        .slide-number {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .spin-box {
+            background: #f8fafc;
+            border-left: 3px solid var(--corporate-blue);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .reality-box {
+            background: #fef2f2;
+            border-left: 3px solid var(--reality-red);
+            padding: 15px 20px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95rem;
+            color: #7f1d1d;
+        }
+
+        .box-label {
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            color: #ffffff;
+            padding: 60px 40px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #9ca3af;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <a href="index.html" class="site-title">Festus Forward</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Overview &amp; FAQ</a></li>
+            <li><a href="presentations.html" style="color: var(--accent-green);">Presentations</a></li>
+            <li><a href="https://festusfierce.org" target="_blank">Real Watchdog Site &rarr;</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-section">
+        <h1>The Presentation <span>Archive</span></h1>
+        <p>A slide-by-slide deconstruction of CRG's June 29, 2026 community pitch deck—examining what they presented versus what they were trying to hide[cite: 1].</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content-container">
+        
+        <div class="deck-intro">
+            <strong>Note from the Community:</strong> On June 29, 2026, CRG executives Bob Clark, Chris McKee, and Natasha Das hosted a special presentation for the City of Festus[cite: 1]. Below is our fully annotated, reality-checked breakdown of their official slide deck.
+        </div>
+
+        <!-- Slide 3 & 4 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Introduction &amp; "We Listened"</span>
+                <span class="slide-number">Slides 3–4</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "We are here because we believe in this project... We listened. We made changes. Today is not the end of the conversation, but a long-term partnership."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                They "listened" only after 100% of the incumbent pro-development city council members were wiped out in a historic April election landslide, and thousands of residents signed recall petitions.
+            </div>
+        </div>
+
+        <!-- Slide 6 & 7 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">The Conceptual Plan (The Shrinking Megawatts)</span>
+                <span class="slide-number">Slides 6–7</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                Designing for approximately 600 megawatts—flaunting that it is "40% smaller than the 1-gigawatt plan" with 500-foot residential property line setbacks[cite: 1].
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                The 1-gigawatt monstrosity was a deliberate anchor-drop strategy. Propose an apocalyptic grid-destroyer first so that a 600-megawatt industrial park looks like a generous favor.
+            </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Environmental Stewardship &amp; Forest Preservation</span>
+                <span class="slide-number">Slide 9</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "± 52% of the land preserved! Leaving ± 188 acres untouched, protecting natural beauty and local gravesites."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                Celebrating that they aren't paving over *every single square inch* of the 360+ acres doesn't change the fact that the remaining 48% will host a massive high-security industrial campus humming 24/7.
+            </div>
+        </div>
+
+        <!-- Slide 18 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Water &amp; Closed-Loop Cooling</span>
+                <span class="slide-number">Slide 18</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "A closed-loop cooling system that recycles water, producing little to no wastewater discharge. Can operate for years without draining."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                Internal engineering reports (Horner & Shifrin) released via sunshine requests proved the Jefferson County Water Authority is already at capacity limits. Confidential agreements kept those scary numbers hidden until local watchdogs exposed them.
+            </div>
+        </div>
+
+        <!-- Slide 19 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Air Quality &amp; Tier 4 Backup Generators</span>
+                <span class="slide-number">Slide 19</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "Backup generators run mainly for brief monthly testing and genuine outages. We've committed to Tier 4 generators and daytime-only testing."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                "Backup generators" for a 600-megawatt facility means an immense fleet of industrial diesel engines roaring simultaneously during grid stress, requiring heavy EPA air permits that residents had to fight tooth and nail to uncover.
+            </div>
+        </div>
+
+        <!-- Slide 21 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Decommissioning Bond</span>
+                <span class="slide-number">Slide 21</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "If abandoned after 20 years, the City may draw on a $10 million bond or letter of credit to reposition the asset."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                A $10 million bond is a drop in the bucket for a $6 billion corporation walking away from a massive, obsolete industrial wasteland two decades down the road.
+            </div>
+        </div>
+
+        <!-- Slide 22 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Electricity &amp; The Grid ($3M Relief Offer)</span>
+                <span class="slide-number">Slide 22</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "We pay for our own energy... If electricity use exceeds 1 GW, we will fund a $3 million payment to the City for residential electric rate relief."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                A token payout of $3 million spread across local utility accounts doesn't fix the long-term strain and wholesale rate spikes inflicted on everyday regional ratepayers by massive tech loads.
+            </div>
+        </div>
+
+        <!-- Slide 23 -->
+        <div class="slide-card">
+            <div class="slide-header">
+                <span class="slide-title">Residential Buyouts</span>
+                <span class="slide-number">Slide 23</span>
+            </div>
+            <div class="spin-box">
+                <span class="box-label" style="color: var(--corporate-blue);">What CRG Claimed</span>
+                "Honoring the voluntary buyout for 12 homes at Fair Market Value as of June 1, 2025 + 15% and a $10,000 moving allowance."[cite: 1]
+            </div>
+            <div class="reality-box">
+                <span class="box-label" style="color: var(--reality-red);">The Reality Check</span>
+                Let's not forget that families originally found out their homes were in a secret developer buyout zone via Facebook posts because the city and developer never bothered to notify them directly.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>CRG Development Presentation Parody</strong></p>
+        <p>Not affiliated with CRG, Clayco, or FestusForward.com &bull; Real accountability at <a href="https://festusfierce.org" target="_blank">FestusFierce.org</a></p>
+    </footer>
+
+</body>
+</html>
