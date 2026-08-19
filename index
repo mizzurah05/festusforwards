@@ -3,238 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festus Forward - Totally Trustworthy Corporate PR</title>
+    <title>Festus Forward | The Reality</title>
     <style>
         :root {
-            --bg-color: #f8fafc;
-            --text-color: #0f172a;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-            --accent-color: #2563eb;
-            --parody-badge: #ef4444;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --corporate-blue: #004a99;
+            --reality-red: #991b1b;
+            --accent: #f8fafc;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding-top: 50px;
-        }
-
-        /* Shared Nav Bar */
-        #main-nav {
-            background-color: #1e293b;
-            padding: 15px;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 100;
-        }
-
-        #main-nav a {
-            color: #f8fafc;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        #main-nav a:hover {
-            color: #60a5fa;
-        }
-
-        /* Corporate Hero Banner Parody */
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid var(--border-color);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            letter-spacing: -0.5px;
-        }
-
-        header h1 span {
-            color: var(--accent-color);
-        }
-
-        header p {
-            color: #64748b;
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .disclaimer-banner {
-            background-color: #fef2f2;
-            border-bottom: 1px solid #fee2e2;
-            color: #991b1b;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* Clean Corporate FAQ Cards */
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-        }
-
-        .card h2 {
-            font-size: 1.3rem;
-            color: #1e293b;
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-item {
-            margin-bottom: 25px;
-        }
-
-        .faq-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .faq-question {
-            font-weight: bold;
-            color: #1e293b;
-            margin-bottom: 8px;
-            font-size: 1.05rem;
-        }
-
-        .faq-answer {
-            color: #475569;
-            font-size: 0.95rem;
-        }
-
-        .corporate-spin {
-            background-color: #f8fafc;
-            border-left: 3px solid var(--accent-color);
-            padding: 12px 15px;
-            margin-top: 8px;
-            border-radius: 0 6px 6px 0;
-            font-size: 0.9rem;
-        }
-
-        .reality-check {
-            background-color: #fef2f2;
-            border-left: 3px solid var(--parody-badge);
-            padding: 12px 15px;
-            margin-top: 8px;
-            border-radius: 0 6px 6px 0;
-            font-size: 0.9rem;
-            color: #7f1d1d;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #94a3b8;
-            font-size: 0.85rem;
-            border-top: 1px solid var(--border-color);
-            background: #fff;
-        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding-top: 60px; }
+        #main-nav { background: #fff; border-bottom: 1px solid #ddd; padding: 15px; text-align: center; position: fixed; top: 0; width: 100%; z-index: 1000; }
+        #main-nav a { margin: 0 10px; color: #333; text-decoration: none; font-weight: bold; }
+        
+        .hero { background: #000; color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        
+        /* The Accordion/Card Style */
+        details { background: white; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px; padding: 15px; cursor: pointer; }
+        summary { font-weight: bold; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; }
+        summary::after { content: '+'; font-size: 1.5rem; }
+        details[open] summary::after { content: '-'; }
+        
+        /* The Spin vs Reality Layout */
+        .spin-box { background: #f1f5f9; padding: 15px; border-left: 4px solid var(--corporate-blue); margin: 15px 0; }
+        .reality-box { background: #fef2f2; padding: 15px; border-left: 4px solid var(--reality-red); margin: 15px 0; }
+        .label { font-weight: bold; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; margin-bottom: 5px; display: block; }
     </style>
 </head>
 <body>
 
-    <!-- Shared Navigation -->
     <nav id="main-nav"></nav>
 
-    <div class="dislaughter-banner disclaimer-banner">
-        PARODY SITE: Dedicated to breaking down the spin on FestusForward.com. Real accountability lives at FestusFierce.org.
-    </div>
-
-    <header>
-        <h1>Festus <span>Forward</span>?</h1>
-        <p>A completely unbinding, highly sanitized, corporate-approved breakdown of what CRG <em>says</em> they're doing versus reality.</p>
+    <header class="hero">
+        <h1>Festus Forward</h1>
+        <p>A "community information" site (that really just wants you to stop asking questions).</p>
     </header>
 
-    <main>
+    <div class="container">
         
-        <!-- Project Overview Parody -->
-        <section class="card">
-            <h2>Project Overview <span style="font-size: 0.8rem; color: #64748b; font-weight: normal;">(Totally Definitive & Binding)</span></h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">What is the size of the project, and what options did you consider?</div>
-                <div class="faq-answer">
-                    <div class="corporate-spin"><strong>The Spin:</strong> "Our initial plan was 1 gigawatt across 12 buildings, but after listening to you, we downsized to 600 megawatts and 4 buildings!"</div>
-                    <div class="reality-check"><strong>The Reality:</strong> The 4-building layout was always the baseline design. They floated the massive 1-gigawatt number first so the "scaled-down" version would look like a generous compromise.</div>
-                </div>
+        <h2>Project Overview</h2>
+
+        <details>
+            <summary>What is the size of the project?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "We listened to you! We downsized from 12 buildings to just 4."
             </div>
-
-            <div class="faq-item" style="margin-top: 20px;">
-                <div class="faq-question">Who is the end-user / tenant of the data center?</div>
-                <div class="faq-answer">
-                    <div class="corporate-spin"><strong>The Spin:</strong> "We have interest from a lot of users! We'll share that at the appropriate time. Trust us, CRG and Clayco are committed regardless!"</div>
-                    <div class="reality-check"><strong>The Reality:</strong> Total secrecy allows them to dodge direct accountability regarding who is actually sucking up the power grid and water table.</div>
-                </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                The 4-building plan was the original baseline design. They floated a massive 12-building "worst-case" scenario so they could look like the good guys when they "compromised" on the plan they actually intended to build all along.
             </div>
-        </section>
+        </details>
 
-        <!-- Water, Energy & Sound Parody -->
-        <section class="card">
-            <h2>Water, Energy & Sound <span style="font-size: 0.8rem; color: #64748b; font-weight: normal;">(Trust Us, Bro)</span></h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">How will this project impact local water resources?</div>
-                <div class="faq-answer">
-                    <div class="corporate-spin"><strong>The Spin:</strong> "It's a closed-loop system! It reuses water over and over and produces little to no wastewater discharge. No private wells will be used."</div>
-                    <div class="reality-check"><strong>The Reality:</strong> Internal engineering reports (like the Horner & Shifrin study) leaked via sunshine requests show the Jefferson County Water Authority is already struggling to keep up with regional capacity demands.</div>
-                </div>
+        <details>
+            <summary>How will this impact local water?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "It's a closed-loop cooling system. We reuse water and produce almost zero discharge."
             </div>
-
-            <div class="faq-item" style="margin-top: 20px;">
-                <div class="faq-question">Are there any plans for on-site power generation?</div>
-                <div class="faq-answer">
-                    <div class="corporate-spin"><strong>The Spin:</strong> "All power comes through Ameren Missouri. There is no power plant—only backup generators for outages and testing."</div>
-                    <div class="reality-check"><strong>The Reality:</strong> Tier 4 diesel backup generators running concurrently during grid stress will roar at massive decibel levels, requiring heavy EPA air permits they haven't transparently addressed.</div>
-                </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                Internal engineering reports (Horner & Shifrin) prove the local water authority is already maxed out. They are hiding confidential figures because if you knew the real capacity numbers, you’d know there’s no water left for the project.
             </div>
-        </section>
+        </details>
 
-    </main>
+        <details>
+            <summary>Are there any plans for on-site power plants?</summary>
+            <div class="spin-box">
+                <span class="label" style="color:var(--corporate-blue)">Corporate Spin</span>
+                "No power plant. Just clean utility power from Ameren and backup generators for testing."
+            </div>
+            <div class="reality-box">
+                <span class="label" style="color:var(--reality-red)">Reality Check</span>
+                "Backup generators" is a euphemism for a massive array of diesel-burning engines that will roar during grid stress. They haven't disclosed the environmental impact of the air permits they'll need for these "backups."
+            </div>
+        </details>
 
-    <footer>
-        <p>A satirical community response site &bull; Not affiliated with CRG, Clayco, or FestusForward.com</p>
-    </footer>
+    </div>
 
-    <!-- Shared Nav Script -->
     <script>
         fetch('nav.html')
             .then(response => response.text())
-            .then(data => {
-                document.getElementById('main-nav').innerHTML = data;
-            });
+            .then(data => { document.getElementById('main-nav').innerHTML = data; });
     </script>
-
 </body>
 </html>
